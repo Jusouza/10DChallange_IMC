@@ -1,6 +1,9 @@
 <resources>
-    <string name="app_name">calculadoraimc</string>
-    <string name="write_your_weight">Digite o seu peso ex: 70.200</string>
-    <string name="write_your_height">Digite a sua altura ex: 1.70</string>
-    <string name="calculate">Calcular</string>
+    <string name="app_name">BMI Calculator</string>
+    <string name="write_your_weight">Write your weight ex: 70.200</string>
+    <string name="write_your_height">Write your height ex: 1.70</string>
+    <string name="calculate">Calculate</string>
+    <string name="bmi_classifying">Your BMI classification is: </string>
+    <string name="classifying_description">Check out the result and classification below: </string>
+    <string name="description_text">Fill all the fields to calculate your Body Mass Index (BMI)</string>
 </resources>
