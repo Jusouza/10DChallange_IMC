@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">calculadoraimc</string>
+    <string name="app_name">Calculadora IMC</string>
     <string name="write_your_weight">Digite o seu peso ex: 70.200</string>
     <string name="write_your_height">Digite a sua altura ex: 1.70</string>
     <string name="calculate">Calcular</string>
+    <string name="imc_classifying">A classificação do seu IMC é:</string>
 </resources>

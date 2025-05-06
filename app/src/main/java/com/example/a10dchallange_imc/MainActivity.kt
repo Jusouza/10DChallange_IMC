@@ -1,11 +1,9 @@
 package com.example.a10dchallange_imc
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 
@@ -13,11 +11,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        //Recuperar o componente editText
-        // criar uma variavel e associar o componente de UI<editText>
-        //colocar acao no botao
-        //recuperar o texto digitado
 
         val edtWeight = findViewById<TextInputEditText>(R.id.edt_weight)
         val edtHeight = findViewById<TextInputEditText>(R.id.edt_height)
@@ -41,6 +34,15 @@ class MainActivity : AppCompatActivity() {
                 val heightQ2 = height * height
                 val result = weight / heightQ2
 
+                //navegar para a proxima tela
+                //criar o layout da proxima tela
+                //paasar os dados da proxima tela
+
+                //intent - classe do proprio android
+
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra(KEY_RESULT_IMC, result)
+                startActivity(intent)
                 println(result)
             }
         }
