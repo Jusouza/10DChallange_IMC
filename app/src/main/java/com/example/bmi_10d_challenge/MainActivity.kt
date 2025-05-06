@@ -1,9 +1,10 @@
-package com.example.a10dchallange_imc
+package com.example.bmi_10d_challenge
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.a10dchallange_imc.R
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             if (weightStr.isEmpty() || heightStr.isEmpty()){
                 Snackbar.make(
                     edtWeight,
-                    "Preencha todos os campos",
+                    ERROR_MASSAGE,
                     Snackbar.LENGTH_LONG
                 ).show()
             } else {
@@ -34,14 +35,8 @@ class MainActivity : AppCompatActivity() {
                 val heightQ2 = height * height
                 val result = weight / heightQ2
 
-                //navegar para a proxima tela
-                //criar o layout da proxima tela
-                //paasar os dados da proxima tela
-
-                //intent - classe do proprio android
-
                 val intent = Intent(this, ResultActivity::class.java)
-                intent.putExtra(KEY_RESULT_IMC, result)
+                intent.putExtra(KEY_RESULT, result)
                 startActivity(intent)
                 println(result)
             }
@@ -49,3 +44,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 }
+const val ERROR_MASSAGE = "Fill all the fields to continue"
+
+// edit text background + icone
+// gradiente

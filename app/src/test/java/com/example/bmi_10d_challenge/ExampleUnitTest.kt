@@ -1,4 +1,4 @@
-package com.example.a10dchallange_imc
+package com.example.bmi_10d_challenge
 
 import org.junit.Test
 
