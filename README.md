@@ -1,7 +1,7 @@
 # BMI Calculator
 
 This project was develop in Android with the programming language Kotlin, has a main functionality to calculate the BMI and show the result on the next screen flow. 
-A simple app, only to preactice and start a protfolio. 
+A simple app, only to practice and start a protfolio. 
 
 ## 📸: Screenshots
 
