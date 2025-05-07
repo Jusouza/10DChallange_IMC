@@ -45,6 +45,3 @@ class MainActivity : AppCompatActivity() {
     }
 }
 const val ERROR_MASSAGE = "Fill all the fields to continue"
-
-// edit text background + icone
-// gradiente
